@@ -1,9 +1,4 @@
 # RequestStoreRails::Sidekiq
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/request_store_rails/sidekiq`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -14,7 +9,7 @@ gem 'request_store_rails-sidekiq'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -22,7 +17,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You'll have RequestLocals working on Sidekiq out of the box.
 
 ## Development
 
@@ -32,4 +27,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/request_store_rails-sidekiq.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Yuki-Inoue/request_store_rails-sidekiq.
