@@ -1,7 +1,7 @@
 # RequestStoreRails::Sidekiq
 ## Problem
 
-[`request_store_rails`](https://github.com/ElMassimo/request_store_rails) is the gem which allows you to have request-local variables stored in your app logic, in a multi-threaded aware way.
+[`request_store_rails`](https://github.com/ElMassimo/request_store_rails) is the gem which allows you to have request-local variables stored in your app logic, in a multi-thread friendly way.
 It is integrated to Rails so that every time you receive a request, new `RequestLocals` context is created.
 
 When you are using Sidekiq on your Rails project, however, such context refreshing is not available as the Rails integration is achieved as a Rack middleware.
