@@ -4,11 +4,11 @@ module RequestStoreRails
   module Sidekiq
     class ServerMiddleware
       def call(_worker, job_hash, _queue)
-        Thread.current[:request_id] = job_hash['jid']
+        Thread.current[::RequestLocals::REQUEST_STORE_ID] = job_hash['jid']
         yield
       ensure
         ::RequestLocals.clear!
-        Thread.current[:request_id] = nil
+        Thread.current[::RequestLocals::REQUEST_STORE_ID] = nil
       end
     end
   end
